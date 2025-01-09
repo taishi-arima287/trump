@@ -1,0 +1,124 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.header {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.main {
+  margin-bottom: 16px;
+}
+
+.card-section {
+  height: 300px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.card-section-title {
+  margin-top: 0;
+  color: #333;
+}
+
+.card-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 120px;
+  height: 200px;
+  padding: 8px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.card .card-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.card .card-group:first-child {
+  align-self: flex-start;
+}
+
+.card .card-group.bottom {
+  align-self: flex-end;
+  transform: rotate(180deg);
+}
+
+.card .card-group > * {
+  text-align: center;
+}
+
+.button-section {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.button-section button {
+  width: 100%;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #2563eb;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.1);
+}
+
+.button-section button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+}
+
+.button-section button:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(37, 99, 235, 0.1);
+}
+
+.button-section button:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.footer {
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.footer-link {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.version {
+  display: block;
+  margin-top: 4px;
+  color: #666;
+}

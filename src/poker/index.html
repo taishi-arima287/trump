@@ -4,25 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ポーカー</title>
+    <link rel="stylesheet" href="/src/poker/index.css" />
   </head>
-  <body>
-    <header>
+  <body class="container">
+    <header class="header">
       <h1>ポーカー</h1>
     </header>
-    <main aria-label="ポーカーゲーム">
-      <div id="app"></div>
+    <main class="main" aria-label="ポーカーゲーム">
+      <div id="app">
+        <section class="card-section">
+          <h2 class="card-section-title">ディーラー</h2>
+          <ul id="dealer-cards" class="card-list"></ul>
+        </section>
+        <section class="button-section">
+          <button id="play-button">プレイ</button>
+        </section>
+        <section class="card-section">
+          <h2 class="card-section-title">プレイヤー</h2>
+          <ul id="player-cards" class="card-list"></ul>
+        </section>
+      </div>
     </main>
-    <footer>
+    <footer class="footer">
       <p>
         &copy; 2024
         <a
           href="https://github.com/taishi-arima287"
+          class="footer-link"
           target="_blank"
           rel="noopener"
           >Taishi Arima</a
         >. All Rights Reserved.
       </p>
-      <small>Version 1.0.0</small>
+      <small class="version">Version 1.0.0</small>
     </footer>
     <script type="module" src="/src/poker/index.ts"></script>
   </body>
