@@ -1,3 +1,10 @@
+/* リセットスタイル */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -5,7 +12,7 @@
 }
 
 .header {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   text-align: center;
 }
 
@@ -21,7 +28,6 @@
 }
 
 .card-section-title {
-  margin-top: 0;
   color: #333;
 }
 
@@ -121,4 +127,30 @@
   display: block;
   margin-top: 4px;
   color: #666;
+}
+
+.result-section {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 16px 0;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.result-section.win {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.result-section.lose {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.result-section.draw {
+  background-color: #f3f4f6;
+  color: #374151;
 }
