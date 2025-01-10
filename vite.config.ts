@@ -5,12 +5,20 @@ export default defineConfig({
   root: "./",
   base: "./",
   build: {
+    outDir: "dist",
+    cssCodeSplit: true,
     rollupOptions: {
-      input: {
-        poker: "./src/poker/index.html",
+      input: "./src/poker/index.html",
+      output: {
+        dir: "dist",
+        assetFileNames: () => {
+          return "src/poker/[name][extname]";
+        },
+        entryFileNames: "src/poker/index.js",
+        chunkFileNames: "src/poker/[name].js",
+        inlineDynamicImports: true,
       },
     },
-    outDir: "dist",
     emptyOutDir: true,
   },
   server: {
