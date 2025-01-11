@@ -108,27 +108,6 @@
   box-shadow: none;
 }
 
-.footer {
-  padding-top: 16px;
-  border-top: 1px solid #eee;
-  text-align: center;
-}
-
-.footer-link {
-  color: #0066cc;
-  text-decoration: none;
-}
-
-.footer-link:hover {
-  text-decoration: underline;
-}
-
-.version {
-  display: block;
-  margin-top: 4px;
-  color: #666;
-}
-
 .result-section {
   text-align: center;
   font-size: 1.2em;
@@ -153,4 +132,25 @@
 .result-section.draw {
   background-color: #f3f4f6;
   color: #374151;
+}
+
+.footer {
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.footer-link {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.version {
+  display: block;
+  margin-top: 4px;
+  color: #666;
 }

@@ -268,11 +268,15 @@
 
     // 勝敗判定と結果表示
     let result = "";
+    const resultSection = document.getElementsByClassName("result-section")[0];
     if (dealerHand.strength > playerHand.strength) {
+      resultSection.className = "result-section lose";
       result = `ディーラーの勝ち（${dealerHand.name} vs ${playerHand.name}）`;
     } else if (dealerHand.strength < playerHand.strength) {
+      resultSection.className = "result-section win";
       result = `プレイヤーの勝ち（${playerHand.name} vs ${dealerHand.name}）`;
     } else {
+      resultSection.className = "result-section draw";
       result = `引き分け（${playerHand.name}）`;
     }
 
